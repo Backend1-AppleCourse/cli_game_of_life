@@ -1,0 +1,23 @@
+
+
+# Conway's Game of Life CLI
+
+Conway's Game of Life is a automaton devised by the British mathematician John Horton Conway in 1970. This CLI version allows users to run simulations in terminal, exploring the fascinating emergence and evolution of patterns based on its simple rules.
+
+## Quick Start
+
+**Prerequisites**: Python 3.6+ 
+
+**Setup**:
+## In **__powershell__**
+```bash
+git clone https://github.com/Backend1-AppleCourse/cli_game_of_life.git
+cd cli_game_of_life
+Run:
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+.\setup.ps1
+python source
+
+
+This project is free software: you can redistribute it and/or modify
