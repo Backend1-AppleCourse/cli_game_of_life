@@ -1,16 +1,21 @@
 
+from utilities.logger import log_function_call
+
 class Game:
     """ A class to represent the Game of Life. 
         This class is responsible for
         simulating the game and calculating the next generation of cells. """
 
+    @log_function_call
     def __init__(self, board):
         self.board = board
 
+    @log_function_call
     def print_board(self):
         for row in self.board:
             print(''.join(row))
 
+    @log_function_call
     def next_generation(self):
         """ Calculate the next generation of cells.
             This method will calculate the next generation of cells
@@ -24,6 +29,7 @@ class Game:
             new_board.append(new_row)
         self.board = new_board
 
+    @log_function_call
     def get_new_cell_state(self, i, j):
         """ Get the new state of a cell.
             This method will return the new state of a cell
@@ -41,6 +47,7 @@ class Game:
                 return 'X'
             return ' '
 
+    @log_function_call
     def count_live_neighbors(self, i, j):
         """ Count the number of living neighbors of a cell.
             This method will count the number of living neighbors of a cell. """
